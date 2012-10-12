@@ -1,5 +1,8 @@
 #ifndef _INCLUDE_LRING_H_
 #define _INCLUDE_LRING_H_
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include <sys/types.h>
 
@@ -45,4 +48,7 @@ ssize_t lring_read(lring_t* ring, char* data, ssize_t size);
  */
 ssize_t lring_peek(lring_t* ring, char* data, ssize_t size);
 
+#ifdef __cplusplus
+}
+#endif
 #endif /* _INCLUDE_LRING_H_ */
